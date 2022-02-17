@@ -1,5 +1,4 @@
 import { StyleSheet } from "react-native";
-import { TouchableWithoutFeedback } from "react-native-web";
 
 const styles = StyleSheet.create({
     container: {
@@ -37,6 +36,9 @@ const styles = StyleSheet.create({
       textAlign: 'center',
       paddingTop: '10px',
       paddingBottom: '10px',
+    },
+    stats: {
+      marginHorizontal: 20,
     }
   });
 

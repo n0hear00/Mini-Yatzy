@@ -56,7 +56,7 @@ export default function Gameboard() {
     }
     if(nbrOfPointsLeft===0){
         setStatus('Game Over');
-    }
+      }
     }, [nbrOfThrowsLeft]);
 
   const dice = [];
@@ -78,9 +78,9 @@ export default function Gameboard() {
   const stats = [];
   for (let i = 0; i < (NBR_OF_POINTS); i++) {
     stats.push (
-        <Col style={styles.numbers} size={5}>
-    {board4[i]}
-    </Col>
+      <Col style={styles.stats} size={5}>
+      {board4[i]}
+      </Col>
     );
   }
 
@@ -130,7 +130,6 @@ export default function Gameboard() {
      
      if(numbers===board3[x]){
          sum+=board3[x];
-         
      }
  
      board4[(i)]=sum;
